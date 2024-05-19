@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie Beauty Cosmetics</title>
+    <meta name="description" content="Welcome to Eddie Beauty Cosmetics - your one-stop shop for all beauty products. Explore our range of makeup, skincare, and more.">
+    <meta name="keywords" content="Eddie Beauty Cosmetics, beauty products, makeup, skincare">
+    <meta name="author" content="Your Name or Company Name">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="j.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:title" content="Eddie Beauty Cosmetics">
+    <meta property="og:description" content="Welcome to Eddie Beauty Cosmetics - your one-stop shop for all beauty products. Explore our range of makeup, skincare, and more.">
+    <meta property="og:image" content="https://www.example.com/images/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.example.com">
+    <meta property="twitter:title" content="Eddie Beauty Cosmetics">
+    <meta property="twitter:description" content="Welcome to Eddie Beauty Cosmetics - your one-stop shop for all beauty products. Explore our range of makeup, skincare, and more.">
+    <meta property="twitter:image" content="https://www.example.com/images/twitter-image.jpg">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="Your Google Search Console Verification Code">
+    <!-- Google Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Eddie Beauty Cosmetics",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-234-567-8901",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/EddieBeautyCosmetics",
+        "https://twitter.com/EddieBeauty",
+        "https://www.instagram.com/EddieBeauty"
+      ]
+    }
+    </script>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.example.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* CSS styles go here */
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+        .home-content {
+            display: flex;
+            align-items: flex-start; /* Align items to the start vertically */
+            justify-content: flex-start; /* Align items to the start horizontally */
+            flex-direction: row; /* Ensure image is on the left and content on the right */
+        }
+
+        .scrollable-images {
+            width: 300px;
+            height: 400px; /* Adjust as needed */
+            overflow-x: scroll; /* Horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks for images */
+            margin-right: 2rem;
+            border-radius: 10px;
+        }
+
+        .scrollable-images img {
+            width: 100%;
+            height: auto;
+            display: inline-block; /* Display images in a row */
+            margin-right: 1rem;
+            border-radius: 10px;
+        }
+
+        .home-description {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center the content */
+        }
+
+        .home-description h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home-description p {
+            font-size: 1.25rem;
+            color: #555;
+        }
+
+        .feature2-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .feature2-image {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 1s ease;
+        }
+
+       
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .home-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .scrollable-images {
+                margin-bottom: 2rem;
+                margin-right: 0;
+            }
+
+            .description-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description-box {
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feature-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description-section {
+    padding: 50px 0;
+}
+
+.description-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.description-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.description-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.selection-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selection-item {
+    width: 45%;
+}
+
+.selection-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.selection-description {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.selection-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.selection-description p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    
+    
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <div class="home-description">
+               <center> <h1>Welcome to Eddie Beauty Cosmetics</h1></center>
+                <p> Discover the allure of timeless beauty and modern allure. With its captivating hues and luxurious textures, Eddie Beauty Cosmetics promises to elevate your everyday routine to extraordinary heights. You can embrace your unique beauty with grace and poise with Eddie Beauty Cosmetics as your trusted companion.</p>
+            </div>
+            <div class="scrollable-images">
+                <img src="j.png" alt="Image 1">
+                <img src="k.png" alt="Image 1">
+                <img src="h.png" alt="Image 2">
+                <img src="l.png" alt="Image 1">
+                <img src="m.png" alt="Image 2">
+                <img src="i.png" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="feature2" class="feature2-section">
+        <img src="l.png" alt="l" class="feature2-image">
+    </section>
+
+    
+<section id="descriptions" class="description-section">
+    <div class="container">
+        <div class="description-box">
+            <h2><img src="a.jpg" alt="l" class="feature-image">Quality Products</h2>
+            <p>Experience the magic of flawless radiance with our Radiant Glow Foundation. Enriched with nourishing ingredients and infused with light-reflecting pigments, this foundation effortlessly blurs imperfections while enhancing your natural glow. Its lightweight formula provides buildable coverage, leaving your skin feeling breathable and luminous all day long. Whether you're looking for a dewy finish or a matte effect, our Radiant Glow Foundation is your secret to radiant, picture-perfect skin.</p>
+        </div>
+        
+</section>
+
+<section id="selection" class="selection-section">
+    <div class="container">
+        <div class="selection-item">
+            <img src="m.png" alt="Image 1" class="selection-image">
+            <div class="selection-description">
+                <h2>ROREC SADOER: Dark Knuckle  </h2>
+                <p>Whitening Serum Niacinamide Vitamin C</p>
+            </div>
+        </div>
+        <div class="selection-item">
+            <img src="l.png" alt="Image 2" class="selection-image">
+            <div class="selection-description">
+                <h2>FACE MAKE UP: Hydrogen cream</h2>
+                <p>SADOER Facial cream-lotion with collagen which hydrates in depth, contributes to the elasticity and regeneration of the skin., ...
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="descriptions" class="description-section">
+    <div class="container">
+        <div class="description-box">
+            <h2>Quality Products</h2>
+            <p>Enjoy the elegance of choice, and let the selection inspire your next beauty adventure.  Every day is one of confidence, empowerment, and unrivaled beauty.</p>
+        </div>
+        
+</section>
+
+<section id="feature2" class="feature2-section">
+        <img src="t.png" alt="l" class="feature2-image">
+    </section>
+
+<section id="descriptions" class="description-section">
+    <div class="container">
+        <div class="description-box">
+            <h2>Find Us</h2>
+            <p>Mini Price Building, Kikuubo Rd, Kampala</p>
+            
+            <h3>open hours</h3>
+            <p>
+                Sunday: 
+10 am–8 pm</p>
+<p>Monday: 
+8 am–8:30 pm</p>
+<p>Tuesday: 
+8 am–8:30 pm</p>
+<p>Wednesday: 
+8 am–8:30 pm</p>
+<p>Thursday:
+8 am–8:30 pm</p>
+<p>Friday: 
+8 am–8:30 pm</p>
+<p>Saturday: 
+8 am–8:30 pm</p>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+</section>
+<section id="descriptions" class="description-section">
+<div class="container">
+        <div class="description-box">
+            <img src="kk.jpg" alt="Image 1" class="selection-image">
+            <h2> Or Contact us </h2>
+            <p>whatsapp: +256 789 025410 </p>
+            <p>call: +256 789 025410</p>
+        </div>
+        </section>
+    <footer>
+        <p>&copy; 2024 Eddie Beauty Cosmetics. All rights reserved.</p>
+        
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+    const scrollContainer = document.querySelector(".scrollable-images");
+    let autoScrollInterval;
+    let autoScrollTimeout;
+    let scrollDirection = 'right';
+
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+            if (scrollDirection === 'right') {
+                scrollContainer.scrollLeft += 1;
+                if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+                    clearInterval(autoScrollInterval);
+                    setTimeout(() => {
+                        scrollDirection = 'left';
+                        startAutoScroll();
+                    }, 2000); // Pause for 2 seconds before scrolling left
+                }
+            } else {
+                scrollContainer.scrollLeft -= 1;
+                if (scrollContainer.scrollLeft <= 0) {
+                    clearInterval(autoScrollInterval);
+                    setTimeout(() => {
+                        scrollDirection = 'right';
+                        startAutoScroll();
+                    }, 2000); // Pause for 2 seconds before scrolling right
+                }
+            }
+        }, 20); // Adjust the speed by changing the interval value
+    }
+
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+        clearTimeout(autoScrollTimeout);
+    }
+
+    function resumeAutoScroll() {
+        autoScrollTimeout = setTimeout(() => {
+            startAutoScroll();
+        }, 30); // Resume auto-scroll after 0.3 seconds of inactivity
+    }
+
+    scrollContainer.addEventListener('mouseenter', () => stopAutoScroll());
+    scrollContainer.addEventListener('mouseleave', () => startAutoScroll());
+
+    scrollContainer.addEventListener('scroll', () => {
+        stopAutoScroll();
+        resumeAutoScroll();
+    });
+
+    startAutoScroll();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+
+    // Highlighting active navigation link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    function highlightNav() {
+        let scrollPosition = window.scrollY;
+        sections.forEach(section => {
+            if (
+                scrollPosition >= section.offsetTop - 50 &&
+                scrollPosition < section.offsetTop + section.offsetHeight - 50
+            ) {
+                let currentId = section.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightNav);
+
+    // Other JavaScript functionalities can be added here as needed
+});
+
+</script>
+</body>
+</html>
