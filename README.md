@@ -60,7 +60,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 For questions, suggestions, or feedback, feel free to reach out:
 
-- **Email**: [Trispnx@gmail.com](mailto:EdagrtukesigaiCloud@gmail.com)
+- **Email**: [EdagrtukesigaiCloud @gmail.com](mailto:EdagrtukesigaiCloud@gmail.com)
 - **Location**: Mini Price Building, Kikuubo Rd, Kampala, Uganda
 - **Open Hours**:
   - Sunday: 10 am–8 pm
